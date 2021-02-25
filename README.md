@@ -105,11 +105,7 @@ _para mas automatizacion puedes colocar este sh ejecutarlo en un cron job para q
 
 ## Autores ✒️
 
-_**Oscar Vargas SysOps AWS**_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
+**Oscar Vargas SysOps AWS**
 
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a el autor del tutorial. 
