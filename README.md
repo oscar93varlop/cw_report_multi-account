@@ -1,5 +1,5 @@
 # cw_report_multi-account
-_Si tienes multiples cuentas de #AWS y quieres mirar que esta alarmado sin tener que abrir la consola cuenta por cuenta por cuenta y se hacemas tedioso cuando se ingresa por SSO y/o se tiene MFA por temas de seguridad _
+_Si tienes multiples cuentas de #AWS y quieres mirar que esta alarmado sin tener que abrir la consola cuenta por cuenta por cuenta y se hacemas tedioso cuando se ingresa por SSO y/o se tiene MFA por temas de seguridad_
 
 ## Comenzando 🚀
 
@@ -13,7 +13,7 @@ _aws cli version 2, como minimo 2 cuentas, un canal de Slack al cual enviar el r
 aws --version
 ```
 
-_debes nombrar los perfiles de las cuentas con los numeros _
+_debes nombrar los perfiles de las cuentas con los numeros_
 
 ```
 aws configure --profile 1
@@ -40,12 +40,17 @@ https://hooks.slack.com/services/SDHGFDFGH/AESTTHGGFSAD/aetsfhgfsdrtfyh (es un e
 
 ### Instalación 🔧
 
-_Paso a Paso de como realizar este reporte _
+_Paso a Paso de como realizar este reporte_
 
-_Dí cómo será ese paso_
+_descargamos el repositorio_
 
 ```
 git clone https://github.com/oscar93varlop/cw_report_multi-account.git
+```
+_ingrese a la carpeta_
+
+```
+cd cw_report_multi-account/
 ```
 
 _damos permisos de ejecucion a los archivos sh_
@@ -76,7 +81,7 @@ case $num in
 		esac 
 ```
 
-_debes modificar el archico  automation_cw.sh en la linea 28, y agregar el webhook, el canal al cual se va a subir el reporte / usuario que quieres que aparezca en el mensaje  /  emoji de slack / nombre del archivo / titulo del reporte 
+_debes modificar el archico  automation_cw.sh en la linea 28, y agregar el webhook, el canal al cual se va a subir el reporte / usuario que quieres que aparezca en el mensaje  /  emoji de slack / nombre del archivo / titulo del reporte_
 
 ```
 sh msg_to_slack.sh -h https://hooks.slack.com/services/bbbbbbbb/aaaaaaa/wsryhrtdgsdfyghf -c nombre del canal -u user.example -i scroll -F rutina.txt -T "report"
@@ -97,7 +102,7 @@ _Aqui un ejemplo con tres cuentas de tres diferentes empresas_
 
 ### Automatizar ?🔩
 
-_para mas automatizacion puedes colocar este sh ejecutarlo en un cron job para que cada cierto tiempo se ejecute _
+_para mas automatizacion puedes colocar este sh ejecutarlo en un cron job para que cada cierto tiempo se ejecute_
 
 ```
 0 */1 * * * $home/cw_report_multi-account/automation_cq.sh 
